@@ -36,7 +36,7 @@ export default function PrincipalHeader({ Buttons }: NavigateButtons) {
       </div>
       <div className="md:hidden">
         <Drawer>
-          <DrawerTrigger>
+          <DrawerTrigger className="animate-bounce  active:bg-zinc-100 active:scale-95">
             <ChevronUp />
           </DrawerTrigger>
           <DrawerContent className="flex items-center bg-zinc-900 ">
