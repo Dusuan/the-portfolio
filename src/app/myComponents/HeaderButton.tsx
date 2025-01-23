@@ -5,11 +5,12 @@ type ButtonProps = {
   href: string;
 };
 
-export default function Button({text, href}: ButtonProps) {
+export default function Button({ text, href }: ButtonProps) {
   return (
-    <div>
-      <p>{text}</p>
-      <Link href={href}></Link>
+    <div className="font-mono text-zinc-400 bg-zinc-900 rounded-md p-1 m-1">
+      <Link href={href}>
+        <p>{text}</p>
+      </Link>
     </div>
   );
 }

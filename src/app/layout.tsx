@@ -20,9 +20,9 @@ export const metadata: Metadata = {
 
 const Buttons = [
   { text: "Home", href: "/" },
-  { text: "About", href: "/about" },
-  { text: "Contact", href: "/contact" },
-  { text: "Projects", href: "/projects" },
+  { text: "About", href: "/About" },
+  { text: "Contact", href: "/Contact" },
+  { text: "Projects", href: "/Projects" },
 ];
 
 export default function RootLayout({
