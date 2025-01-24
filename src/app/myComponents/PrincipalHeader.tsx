@@ -25,7 +25,7 @@ type NavigateButtons = {
 export default function PrincipalHeader({ Buttons }: NavigateButtons) {
   return (
     <div className="flex h-20 bg-zinc-950 text-white items-center justify-center">
-      <div className="hidden md:flex md:items-center md:justify-center rounded-xl bg-zinc-900 w-3/6 h-4/6">
+      <div className="hidden md:flex md:items-center md:justify-center rounded-xl bg-zinc-900 w-full h-4/6">
         {Buttons.map((button) => (
           <HeaderButton
             key={button.href}
@@ -36,8 +36,8 @@ export default function PrincipalHeader({ Buttons }: NavigateButtons) {
       </div>
       <div className="md:hidden">
         <Drawer>
-          <DrawerTrigger className="animate-bounce  active:bg-zinc-100 active:scale-95">
-            <ChevronUp />
+          <DrawerTrigger className="animate-bounce   active:scale-95">
+            <ChevronUp className="active:bg-zinc-700"/>
           </DrawerTrigger>
           <DrawerContent className="flex items-center bg-zinc-900 ">
             <DrawerTitle></DrawerTitle>

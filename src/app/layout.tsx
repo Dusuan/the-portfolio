@@ -36,7 +36,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950`}
       >
         <AppRouterCacheProvider>
-          <div className=" md:mx-12">
+          <div className=" md:mx-42 xl:mx-96">
             <PrincipalHeader Buttons={Buttons} />
             {children}
           </div>
