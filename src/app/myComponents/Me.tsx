@@ -11,11 +11,12 @@ import { Button } from "@/components/ui/button";
 import HeaderButton from "./HeaderButton";
 import Image from "next/image";
 import Icon from "./Icon";
+import { Separator } from "@/components/ui/separator";
 
 export default function Me() {
   return (
-    <div className="mt-10 ">
-      <Card>
+    <div className="mt-10 flex justify-center items-center">
+      <Card className="flex w-fit bg-zinc-900 border border-zinc-700">
         <CardContent className="p-6 flex justify-between">
           <div className="relative h- w-40">
             <Image
@@ -25,9 +26,11 @@ export default function Me() {
               src="/dusuanA.jpg"
             />
           </div>
-          <div className="flex flex-col">
+          <Separator orientation="vertical" className="mx-6 bg-zinc-700" />
+
+          <div className="text-zinc-300 flex flex-col">
             <CardTitle>Juan Sandoval</CardTitle>
-            <Button size={"sm"} className="mt-2">
+            <Button size={"sm"} className="mt-2" variant={"default"}>
               <Icon src={"/github.svg"} w={8} h={8} alt={"GithubLogo"} />
               Github
             </Button>

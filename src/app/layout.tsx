@@ -33,10 +33,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950`}
+        className={`${geistSans.variable} ${geistMono.variable} h-svh antialiased bg-zinc-950`}
       >
         <AppRouterCacheProvider>
-          <div className=" md:mx-40 xl:mx-96">
+          <div className="h-svh md:mx-40 xl:mx-96">
             <PrincipalHeader Buttons={Buttons} />
             {children}
           </div>

@@ -4,17 +4,16 @@ import Intro from "@/app/myComponents/Intro";
 import About from "@/app/myComponents/About";
 import { Separator } from "@/components/ui/separator";
 import ProjectCarousel from "./myComponents/ProjectCarousel";
+import Technologies from "./myComponents/Technologies";
 
 export default function Home() {
   return (
-    <div className="mx-10 flex justify-center items-center  bg-zinc-950 text-white">
-      <div className="md:grid md:grid-flow-col ">
-        <Me/>
-        <Separator orientation="horizontal" className="my-10 bg-zinc-600" />
-        <Intro/>
-        <About/>
-        <Separator orientation="horizontal" className="my-10 bg-zinc-600"/>
-        <ProjectCarousel/>
+    <div className="md:mx-10 flex justify-center items-center  bg-zinc-950 text-white">
+      <div className=" flex flex-col lg:grid lg:grid-flow-col">
+        <Me />
+        <About />
+        <ProjectCarousel />
+        <Technologies />
       </div>
     </div>
   );
