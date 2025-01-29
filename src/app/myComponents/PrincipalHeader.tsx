@@ -50,12 +50,8 @@ export default function PrincipalHeader({ Buttons }: NavigateButtons) {
               className="font-bold text-2xl text-zinc-400"
             ></DrawerHeader>
             {Buttons.map((button) => (
-              <div>
-                <HeaderButton
-                  key={button.href}
-                  text={button.text}
-                  href={button.href}
-                />
+              <div key={button.href}>
+                <HeaderButton text={button.text} href={button.href} />
                 <Separator orientation="horizontal" className=" bg-zinc-400" />
               </div>
             ))}

@@ -5,6 +5,7 @@ import About from "@/app/myComponents/About";
 import { Separator } from "@/components/ui/separator";
 import ProjectCarousel from "./myComponents/ProjectCarousel";
 import Technologies from "./myComponents/Technologies";
+import Contact from "./myComponents/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <About />
         <ProjectCarousel />
         <Technologies />
+        <Contact/>
       </div>
     </div>
   );
