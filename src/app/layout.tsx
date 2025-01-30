@@ -41,7 +41,7 @@ export default function RootLayout({
           <div className="min-h-svh md:mx-16 xl:mx-60 2xl:mx-72 bg-zinc-950 px-10">
             <PrincipalHeader Buttons={Buttons} />
             <div className="flex h-full justify-center items-start">
-              <div className="hidden lg:flex sticky top-32">
+              <div className="hidden lg:flex sticky top-20">
                 <Me />
               </div>
               {<Separator orientation="vertical" className=" bg-zinc-700" />}

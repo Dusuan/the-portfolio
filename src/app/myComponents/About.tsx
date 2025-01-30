@@ -2,11 +2,9 @@ import Intro from "./Intro";
 import { Separator } from "@/components/ui/separator";
 export default function About() {
   return (
-    <div className="m-12">
-      <Separator orientation="horizontal" className="my-10 bg-zinc-700" />
-
+    <div className="">
       <Intro />
-      <p className="text-center font-mono">
+      <p className="text-center lg:text-start font-mono">
         Hi, Welcome to my little corner of the internet, I'm a software
         developer that enjoys coding since highschool and is currently studying
         software engineering at Cetys Universidad, I like to develop projects on

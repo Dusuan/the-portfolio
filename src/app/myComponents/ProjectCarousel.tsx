@@ -35,7 +35,7 @@ const projects = [
 export default function ProjectCarousel() {
   return (
     <div className="flex flex-col items justify-center">
-      <div className="mt-2 text-center">
+      <div className="mt-2 text-center lg:text-start">
         <p className="m-0 text-5xl md:text-6xl font-extrabold">RECENT </p>
         <p className="m-0 text-5xl md:text-6xl font-extrabold mb-6 text-zinc-600">
           PROJECTS

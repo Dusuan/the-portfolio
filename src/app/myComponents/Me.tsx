@@ -15,7 +15,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Me() {
   return (
-    <div className="mt-10 mh-full w-full flex justify-center items-center">
+    <div className="mt-10 h-full w-full flex justify-center items-center">
       <Card className="flex h-full w-full bg-zinc-900 border border-zinc-700">
         <CardContent className="p-6 flex justify-between">
           <div className="relative w-40">

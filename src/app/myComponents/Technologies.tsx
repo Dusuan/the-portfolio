@@ -6,6 +6,7 @@ import { useEffect, useState, useRef } from "react";
 import React from "react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { Separator } from "@/components/ui/separator";
 
 const technologies1 = [
   { text: "SpringBoot", logo: "/next.svg" },
@@ -32,6 +33,8 @@ const technologies4 = [
 export default function () {
   return (
     <div className="flex flex-col items-center justify-center overflow-hidden">
+      <Separator orientation="horizontal" className="my-10 bg-zinc-700" />
+
       <div className="mt-10 max-h-full max-w-full text-center">
         <p className="m-0 text-5xl md:text-6xl font-extrabold">MY </p>
         <p className="m-0 text-4xl md:text-5xl font-extrabold mb-6 text-zinc-600">
