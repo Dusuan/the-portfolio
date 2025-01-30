@@ -24,6 +24,11 @@ const technologies3 = [
   { text: "Datagrip", logo: "/globe.svg" },
   { text: "Hibernate", logo: "/globe.svg" },
 ];
+const technologies4 = [
+  { text: "PostgreSQL", logo: "/globe.svg" },
+  { text: "Datagrip", logo: "/globe.svg" },
+  { text: "Hibernate", logo: "/globe.svg" },
+];
 export default function () {
   return (
     <div className="flex flex-col items-center justify-center overflow-hidden">
@@ -64,7 +69,10 @@ export default function () {
           className="my-2"
         >
           {technologies2.map((technology, index) => (
-            <Badge  className="h-8 fit flex justify-center border border-zinc-700  items-center" key={index}>
+            <Badge
+              className="h-8 fit flex justify-center border border-zinc-700  items-center"
+              key={index}
+            >
               <Image
                 width={20}
                 height={20}
@@ -84,7 +92,34 @@ export default function () {
           pauseOnHover={true}
         >
           {technologies3.map((technology, index) => (
-            <Badge  className="h-8 fit flex justify-center border border-zinc-700  items-center" key={index}>
+            <Badge
+              className="h-8 fit flex justify-center border border-zinc-700  items-center"
+              key={index}
+            >
+              <Image
+                width={20}
+                height={20}
+                className="mr-2"
+                priority
+                src={technology.logo}
+                alt={technology.text}
+              />
+              {technology.text}
+            </Badge>
+          ))}
+        </Marquee>
+        <Marquee
+          autoFill={true}
+          speed={10}
+          direction="right"
+          pauseOnHover={true}
+          className="my-2"
+        >
+          {technologies4.map((technology, index) => (
+            <Badge
+              className="h-8 fit flex justify-center border border-zinc-700  items-center"
+              key={index}
+            >
               <Image
                 width={20}
                 height={20}

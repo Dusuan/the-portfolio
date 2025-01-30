@@ -1,3 +1,7 @@
+import {z} from "zod";
+
+const mySchema = z.string();
+
 export default function () {
   return (
     <div>
@@ -7,6 +11,11 @@ export default function () {
           MESSAGE
         </p>{" "}
       </div>
+
+      <div>
+
+      </div>
+
     </div>
   );
 }

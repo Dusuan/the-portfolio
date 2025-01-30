@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import PrincipalHeader from "./myComponents/PrincipalHeader";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
+import Me from "./myComponents/Me";
+import { Separator } from "@/components/ui/separator";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -33,12 +35,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} h-svh antialiased bg-zinc-950`}
+        className={`${geistSans.variable} ${geistMono.variable} h-full antialiased bg-gradient-to-t from-zinc-950 to-zinc-900`}
       >
         <AppRouterCacheProvider>
-          <div className="h-svh md:mx-40 xl:mx-96">
+          <div className="min-h-svh md:mx-16 xl:mx-60 2xl:mx-72 bg-zinc-950 px-10">
             <PrincipalHeader Buttons={Buttons} />
-            {children}
+            <div className="flex h-full justify-center items-start">
+              <div className="hidden lg:flex sticky top-32">
+                <Me />
+              </div>
+              {<Separator orientation="vertical" className=" bg-zinc-700" />}
+              {children}
+            </div>
           </div>
         </AppRouterCacheProvider>
       </body>

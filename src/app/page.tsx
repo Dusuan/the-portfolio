@@ -9,13 +9,20 @@ import Contact from "./myComponents/Contact";
 
 export default function Home() {
   return (
-    <div className="md:mx-10 flex justify-center items-center  bg-zinc-950 text-white">
-      <div className=" flex flex-col lg:grid lg:grid-flow-col">
+    <div className="md:mx-10 2xl:mx-20 flex justify-center bg-zinc-950 text-white">
+      <div className="flex h-full flex-col lg:hidden">
         <Me />
         <About />
         <ProjectCarousel />
         <Technologies />
-        <Contact/>
+        <Contact />
+      </div>
+    
+      <div className="hidden lg:flex flex-col">
+        <About />
+        <ProjectCarousel />
+        <Technologies />
+        <Contact />
       </div>
     </div>
   );
