@@ -13,6 +13,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import ProjectTiles from "./ProjectTiles";
 
 const projects = [
   {
@@ -34,14 +35,14 @@ const projects = [
 
 export default function ProjectCarousel() {
   return (
-    <div className="flex flex-col items justify-center">
+    <div className="flex flex-col justify-center">
       <div className="mt-2 text-center lg:text-start">
         <p className="m-0 text-5xl md:text-6xl font-extrabold">RECENT </p>
         <p className="m-0 text-5xl md:text-6xl font-extrabold mb-6 text-zinc-600">
           PROJECTS
         </p>{" "}
       </div>
-      <div className="flex justify-center my-10">
+      <div className="flex lg:hidden justify-center my-10">
         <Carousel className="max-w-64">
           <CarouselContent className="min-h-96">
             {projects.map((project, index) => (
@@ -67,6 +68,11 @@ export default function ProjectCarousel() {
           <CarouselPrevious className="border-zinc-600 bg-zinc-800" />
           <CarouselNext className="border-zinc-600 bg-zinc-800" />
         </Carousel>
+      </div>
+      <div className="hidden lg:flex lg:flex-col justify-center">
+        {projects.map((project, index) => (
+          <ProjectTiles description={project.description} title={project.title} image={project.image} />
+        ))}
       </div>
     </div>
   );

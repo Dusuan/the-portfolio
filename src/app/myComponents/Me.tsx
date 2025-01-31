@@ -15,7 +15,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Me() {
   return (
-    <div className="mt-10 h-full w-full flex justify-center items-center">
+    <div className="mt-10 h-96 w-full flex justify-center items-center">
       <Card className="flex h-full w-full bg-zinc-900 border border-zinc-700">
         <CardContent className="p-6 flex justify-between">
           <div className="relative w-40">
@@ -26,7 +26,7 @@ export default function Me() {
               src="/dusuanpelon.jpg"
             />
           </div>
-          <Separator orientation="vertical" className="mx-6 bg-zinc-700" />
+          <Separator orientation="vertical" className="mx-6 bg-zinc-800" />
 
           <div className="text-zinc-300 flex flex-col">
             <CardTitle>Juan Sandoval</CardTitle>
