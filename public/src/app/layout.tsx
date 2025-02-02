@@ -5,8 +5,6 @@ import PrincipalHeader from "./myComponents/PrincipalHeader";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import Me from "./myComponents/Me";
 import { Separator } from "@/components/ui/separator";
-import React, { useState } from "react";
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -34,7 +32,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
       <body
@@ -44,7 +41,11 @@ export default function RootLayout({
           <div className="min-h-svh md:mx-16 xl:mx-60 2xl:mx-72 bg-zinc-950 px-10">
             <PrincipalHeader Buttons={Buttons} />
             <div className="flex h-full justify-center items-start">
-              {children }
+              <div className="hidden lg:flex sticky top-20">
+                <Me />
+              </div>
+              {<Separator orientation="vertical" className=" bg-zinc-700" />}
+              {children}
             </div>
           </div>
         </AppRouterCacheProvider>
