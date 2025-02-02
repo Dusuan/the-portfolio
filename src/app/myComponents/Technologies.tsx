@@ -9,26 +9,40 @@ import Marquee from "react-fast-marquee";
 import { Separator } from "@/components/ui/separator";
 
 const technologies1 = [
-  { text: "SpringBoot", logo: "/next.svg" },
-  { text: "JavaScript", logo: "/globe.svg" },
-  { text: "React", logo: "/file.svg" },
+  { text: "C", logo: "/c.svg" },
+  { text: "C++", logo: "/cplusplus.svg" },
+  { text: "JavaScript", logo: "/javascript.svg" },
+  { text: "TypeScript", logo: "/typescript.svg" },
+  { text: "Python", logo: "/python.svg" },
+  { text: "Java", logo: "/java-icon.svg" },
 ];
 
 const technologies2 = [
-  { text: "Python", logo: "/globe.svg" },
-  { text: "C++", logo: "/globe.svg" },
-  { text: "Typescript", logo: "/globe.svg" },
+  { text: "Figma", logo: "/figma.svg" },
+  { text: "Html", logo: "/html5.svg" },
+  { text: "CSS", logo: "/css.svg" },
+  { text: "Tailwind", logo: "/tailwind.svg" },
+  { text: "Node.js", logo: "/nodedotjs.svg" },
+  { text: "Next.js", logo: "/nextdotjs.svg" },
+  { text: "Puppeteer", logo: "/puppeteer.svg" },
+  { text: "React", logo: "/react.svg" },
+
 ];
 
 const technologies3 = [
-  { text: "PostgreSQL", logo: "/globe.svg" },
-  { text: "Datagrip", logo: "/globe.svg" },
-  { text: "Hibernate", logo: "/globe.svg" },
+  { text: "Docker", logo: "/docker.svg" },
+  { text: "Git", logo: "/git.svg" },
+  { text: "Github", logo: "/github.svg" },
+  { text: "Postman", logo: "/postman.svg" },
+  { text: "Render", logo: "/render.svg" },
+  { text: "Vercel", logo: "/vercel.svg" },
+  { text: "Express", logo: "/express.svg" },
 ];
 const technologies4 = [
-  { text: "PostgreSQL", logo: "/globe.svg" },
-  { text: "Datagrip", logo: "/globe.svg" },
-  { text: "Hibernate", logo: "/globe.svg" },
+  { text: "PostgreSQL", logo: "/postgresql.svg" },
+  { text: "Supabase", logo: "/supabase.svg" },
+  { text: "SpringBoot", logo: "/springboot.svg" },
+
 ];
 export default function () {
   return (
@@ -41,7 +55,7 @@ export default function () {
           TECHNOLOGIES
         </p>{" "}
       </div>
-      <div className="flex flex-col justify-center items-center overflow-hidden">
+      <div className="flex flex-col justify-center items-center lg:items-start overflow-hidden">
         <div className="relative w-96 lg:w-[470px] 2xl:w-[750px] 3xl:w-[1200px] border border-1 border-zinc-700 rounded-lg">
           <Marquee
             className="my-2"

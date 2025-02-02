@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 const Buttons = [
   { text: "Home", href: "/" },
   { text: "About", href: "/About" },
-  { text: "Contact", href: "/Contact" },
+  { text: "Contact", href: "#contact" },
   { text: "Projects", href: "/Projects" },
 ];
 
@@ -36,9 +36,9 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} h-full antialiased bg-gradient-to-t from-zinc-950 to-zinc-900`}
+         className={`${geistSans.variable} ${geistMono.variable} h-full antialiased bg-gradient-to-t from-zinc-950 to-zinc-900`}
       >
         <AppRouterCacheProvider>
           <div className="min-h-svh md:mx-16 xl:mx-60 2xl:mx-72 bg-zinc-950 px-10">

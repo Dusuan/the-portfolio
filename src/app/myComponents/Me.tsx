@@ -23,29 +23,30 @@ type MeProps = {
 
 export default function Me({ isOpen, setIsOpen }: MeProps) {
   return (
-    <div className="ease-in mt-10 h-96 w-full flex justify-center items-center">
+    <div className="ease-in mt-10 h-full w-full flex justify-center items-center">
       <Card className="flex h-full w-full bg-zinc-900 border border-zinc-700">
-        <CardContent className="p-6 flex justify-between">
-          <div className="relative w-40">
+        <CardContent className="p-6 flex lg:flex-col justify-between">
+          <div className="flex justify-center items-center relative w-52">
             <Image
               className="rounded-lg"
-              fill={true}
+              height={300}
+              width={400}
               alt="My photo"
               src="/dusuanpelon.jpg"
             />
           </div>
-          <Separator orientation="vertical" className="mx-6 bg-zinc-800" />
+          <Separator orientation="horizontal" className="hidden lg:block lg:my-4 bg-zinc-800" />
+          <Separator orientation="vertical" className="relative mx-8 lg:mx-0 lg:hidden bg-zinc-800" />
 
           <div className="text-zinc-300 flex flex-col">
             <CardTitle>Juan Sandoval</CardTitle>
-            <Button asChild size={"sm"} className="mt-2" variant={"default"}>
+            <Button asChild size={"sm"} className="mt-4" variant={"default"}>
               <Link
                 href={"https://github.com/Dusuan"}
               >
                 <Image
                   width={20}
                   height={20}
-                  className="invert"
                   priority
                   src={"/github.svg"}
                   alt={"Github"}
@@ -53,7 +54,7 @@ export default function Me({ isOpen, setIsOpen }: MeProps) {
               </Link>
             </Button>
 
-            <Button asChild size={"sm"} className="items-center mt-2">
+            <Button asChild size={"sm"} className="items-center mt-4">
               <Link
                 href={"https://www.linkedin.com/in/juan-sandoval-195700297/"}
               >
@@ -70,7 +71,7 @@ export default function Me({ isOpen, setIsOpen }: MeProps) {
             <Button
               size={"sm"}
               onClick={() => setIsOpen((prev) => !prev)}
-              className="mt-2 font- active:border active:border-zinc-200"
+              className="mt-4 font- active:border active:border-zinc-200"
             >
               Resume
             </Button>
