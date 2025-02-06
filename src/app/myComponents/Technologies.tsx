@@ -26,7 +26,6 @@ const technologies2 = [
   { text: "Next.js", logo: "/nextdotjs.svg" },
   { text: "Puppeteer", logo: "/puppeteer.svg" },
   { text: "React", logo: "/react.svg" },
-
 ];
 
 const technologies3 = [
@@ -42,7 +41,6 @@ const technologies4 = [
   { text: "PostgreSQL", logo: "/postgresql.svg" },
   { text: "Supabase", logo: "/supabase.svg" },
   { text: "SpringBoot", logo: "/springboot.svg" },
-
 ];
 export default function () {
   return (
