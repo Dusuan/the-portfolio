@@ -57,7 +57,7 @@ export default function () {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel>Name</FormLabel> 
                   <FormControl className="bg-zinc-900 border border-zinc-500 rounded-lg p-4">
                     <Input placeholder="Your name" {...field} />
                   </FormControl>
@@ -69,7 +69,7 @@ export default function () {
             
             <FormField
               control={form.control}
-              name="name"
+              name="email"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Email</FormLabel>
@@ -84,7 +84,7 @@ export default function () {
             </div>
             <FormField
               control={form.control}
-              name="name"
+              name="message"
               render={({ field }) => (
                 <FormItem className="mb-2">
                   <FormLabel>Message</FormLabel>
