@@ -45,7 +45,7 @@ export default function () {
       </div>
 
       <div className="mb-32  items-start ">
-        <Form {...form}>
+        <Form  {...form}>
           <form
             className="flex flex-col border bg-zinc-900 border-zinc-700 rounded-lg p-10"
             onSubmit={form.handleSubmit(onSubmit)}
