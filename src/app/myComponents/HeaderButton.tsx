@@ -7,7 +7,7 @@ type ButtonProps = {
 
 export default function Button({ text, href }: ButtonProps) {
   return (
-    <div className="font-mono text-zinc-400 bg-zinc-900 rounded-md p-1 m-1">
+    <div className="font-mono text-neutral-400 bg-neutral-900 rounded-md p-1 m-1">
       <Link href={href}>
         <p>{text}</p>
       </Link>

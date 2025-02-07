@@ -20,9 +20,9 @@ export default function Home() {
       <div className="hidden lg:flex sticky top-20">
         <Me isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
-      {<Separator orientation="vertical" className=" bg-zinc-700" />}
+      {<Separator orientation="vertical" className=" bg-neutrla-700" />}
 
-      <div className="md:mx-10 2xl:mx-20 flex justify-center bg-zinc-950 text-white">
+      <div className="md:mx-10 2xl:mx-20 flex justify-center  text-white">
         <div className="flex h-full flex-col lg:hidden">
           <Me isOpen={isOpen} setIsOpen={setIsOpen} />
           <About />

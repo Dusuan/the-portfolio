@@ -44,26 +44,26 @@ const technologies4 = [
 ];
 export default function () {
   return (
-    <div>
-      <Separator orientation="horizontal" className="my-10 bg-zinc-700" />
+    <div >
+      <Separator orientation="horizontal" className="my-10 bg-neutral-700" />
 
       <div className="mt-10 max-h-full max-w-full text-center lg:text-start">
-        <p className="m-0 text-5xl md:text-6xl font-extrabold ">MY </p>
-        <p className="m-0 text-4xl md:text-5xl font-extrabold mb-6 text-zinc-600">
+        <p className="m-0 text-5xl md:text-6xl xl:text-7xl font-extrabold ">MY </p>
+        <p className="m-0 text-4xl md:text-5xl xl:text-7xl font-extrabold mb-6 text-neutral-600">
           TECHNOLOGIES
         </p>{" "}
       </div>
-      <div className="flex flex-col justify-center items-center lg:items-start overflow-hidden">
-        <div className="relative w-96 lg:w-[470px] 2xl:w-[750px] 3xl:w-[1200px] border border-1 border-zinc-700 rounded-lg">
+      <div className="font-mono flex flex-col justify-center items-center lg:items-start overflow-hidden">
+        <div className="relative w-96 lg:w-[470px] 2xl:w-[750px] 3xl:w-[1200px] border border-1 border-neutral-700 rounded-lg">
           <Marquee
             className="my-2"
             autoFill={true}
-            speed={10}
+            speed={20}
             pauseOnHover={true}
           >
             {technologies1.map((technology, index) => (
               <div key={index}>
-                <Badge className="h-8 fit flex justify-center border border-zinc-700 items-center">
+                <Badge className="h-12 fit flex justify-center border border-neutral-700 items-center">
                   <Image
                     width={20}
                     height={20}
@@ -79,14 +79,14 @@ export default function () {
           </Marquee>
           <Marquee
             autoFill={true}
-            speed={10}
+            speed={20}
             direction="right"
             pauseOnHover={true}
             className="my-2"
           >
             {technologies2.map((technology, index) => (
               <Badge
-                className="h-8 fit flex justify-center border border-zinc-700  items-center"
+                className="h-12 fit flex justify-center border border-neutral-700  items-center"
                 key={index}
               >
                 <Image
@@ -104,12 +104,12 @@ export default function () {
           <Marquee
             className="my-2"
             autoFill={true}
-            speed={10}
+            speed={20}
             pauseOnHover={true}
           >
             {technologies3.map((technology, index) => (
               <Badge
-                className="h-8 fit flex justify-center border border-zinc-700  items-center"
+                className="h-12 fit flex justify-center border border-neutral-700  items-center"
                 key={index}
               >
                 <Image
@@ -126,14 +126,14 @@ export default function () {
           </Marquee>
           <Marquee
             autoFill={true}
-            speed={10}
+            speed={20}
             direction="right"
             pauseOnHover={true}
             className="my-2"
           >
             {technologies4.map((technology, index) => (
               <Badge
-                className="h-8 fit flex justify-center border border-zinc-700  items-center"
+                className="h-12 fit flex justify-center border border-neutral-700  items-center"
                 key={index}
               >
                 <Image

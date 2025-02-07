@@ -38,16 +38,16 @@ export default function () {
   return (
     <div id="contact">
       <div className="mt-10 text-center lg:text-start">
-        <p className="m-0 text-5xl md:text-6xl font-extrabold">SEND ME A </p>
-        <p className="m-0 text-5xl md:text-6xl font-extrabold mb-6 text-zinc-600">
+        <p className="m-0 text-5xl md:text-6xl xl:text-7xl font-extrabold">SEND ME A </p>
+        <p className="m-0 text-5xl md:text-6xl xl:text-7xl font-extrabold mb-6 text-neutral-600">
           MESSAGE
         </p>{" "}
       </div>
 
-      <div className="mb-32  items-start ">
+      <div className="mb-32 items-start ">
         <Form  {...form}>
           <form
-            className="flex flex-col border bg-zinc-900 border-zinc-700 rounded-lg p-10"
+            className="flex flex-col font-mono border bg-neutral-900 border-neutral-900 rounded-lg"
             onSubmit={form.handleSubmit(onSubmit)}
           >
             <div className="flex w-full gap-4
@@ -58,7 +58,7 @@ export default function () {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Name</FormLabel> 
-                  <FormControl className="bg-zinc-900 border border-zinc-500 rounded-lg p-4">
+                  <FormControl className="bg-neutral-800 border-neutral-900 rounded-lg p-4">
                     <Input placeholder="Your name" {...field} />
                   </FormControl>
                   <FormDescription></FormDescription>
@@ -73,7 +73,7 @@ export default function () {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Email</FormLabel>
-                  <FormControl className="border-zinc-500  bg-zinc-900 rounded-lg p-4">
+                  <FormControl className="bg-neutral-800 border-neutral-900 rounded-lg p-4">
                     <Input placeholder="Your Email" {...field} />
                   </FormControl>
                   <FormDescription></FormDescription>
@@ -86,10 +86,10 @@ export default function () {
               control={form.control}
               name="message"
               render={({ field }) => (
-                <FormItem className="mb-2">
+                <FormItem className="mb-2 ">
                   <FormLabel>Message</FormLabel>
-                  <FormControl className="border-zinc-500  bg-zinc-900 rounded-lg p-4">
-                    <Textarea placeholder="Your message" {...field} />
+                  <FormControl className="bg-neutral-800  border-neutral-900 rounded-lg p-4">
+                    <Textarea placeholder="Your message" {...field} className="h-36" />
                   </FormControl>
                   <FormDescription></FormDescription>
                   <FormMessage />

@@ -38,10 +38,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-         className={`${geistSans.variable} ${geistMono.variable} h-full antialiased bg-gradient-to-t from-zinc-950 to-zinc-900`}
+         className={`${geistSans.variable} ${geistMono.variable} h-full antialiased bg-gradient-to-t from-neutral-950 to-neutral-800`}
       >
         <AppRouterCacheProvider>
-          <div className="min-h-svh md:mx-16 xl:mx-60 2xl:mx-72 bg-zinc-950 px-10">
+          <div className="min-h-svh md:mx-16 xl:mx-60 2xl:mx-72 bg-neutral-900 px-10">
             <PrincipalHeader Buttons={Buttons} />
             <div className="flex h-full justify-center items-start">
               {children }

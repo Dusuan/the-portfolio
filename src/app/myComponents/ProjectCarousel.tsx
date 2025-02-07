@@ -37,8 +37,8 @@ export default function ProjectCarousel() {
   return (
     <div className="flex flex-col justify-center">
       <div className="mt-2 text-center lg:text-start">
-        <p className="m-0 text-5xl md:text-6xl font-extrabold">RECENT </p>
-        <p className="m-0 text-5xl md:text-6xl font-extrabold mb-6 text-zinc-600">
+        <p className="m-0 text-5xl md:text-6xl xl:text-7xl font-extrabold">RECENT </p>
+        <p className="m-0 text-5xl md:text-6xl xl:text-7xl font-extrabold mb-6 text-neutral-600">
           PROJECTS
         </p>{" "}
       </div>
@@ -47,7 +47,7 @@ export default function ProjectCarousel() {
           <CarouselContent className="min-h-96">
             {projects.map((project, index) => (
               <CarouselItem key={index} className="h-full w-32">
-                <Card className="bg-zinc-900 border border-zinc-700">
+                <Card className="bg-neutral-900 border border-neutral-700">
                   <CardHeader className="text-white">
                     <CardTitle>{project.title}</CardTitle>
                     <CardDescription className="text-inherit">
@@ -65,8 +65,8 @@ export default function ProjectCarousel() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="border-zinc-600 bg-zinc-800" />
-          <CarouselNext className="border-zinc-600 bg-zinc-800" />
+          <CarouselPrevious className="border-neutral-600 bg-neutral-800" />
+          <CarouselNext className="border-neutral-600 bg-neutral-800" />
         </Carousel>
       </div>
       <div className="hidden lg:flex lg:flex-col justify-center">

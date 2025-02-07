@@ -47,7 +47,7 @@ export default function PdfModal({ isOpen, setIsOpen }: PdfModalProps) {
   return (
     <div className="bg-opacity-60 bg-black fixed top-0 left-0 w-full h-full z-50">
       <div
-        className="overflow-clip bg-black borrder border-zinc-700"
+        className="overflow-clip bg-black borrder border-neutral-700"
         style={style}
         ref={modalRef}
       >
