@@ -1,9 +1,10 @@
-"use client"
-import Contact from "@/app/myComponents/Contact";
+"use client";
+import About from "@/app/myComponents/About";
 import Me from "@/app/myComponents/Me";
 import { useAppContext } from "@/app/AppContext";
 import PdfModal from "@/app/myComponents/pdfModal";
-export default function Contacto() {
+import Contact from "@/app/myComponents/Contact";
+export default function Acerca() {
   const appContext = useAppContext();
   if (!appContext) {
     return null;
@@ -12,8 +13,9 @@ export default function Contacto() {
 
   return (
     <div className="text-white">
-
-      <Contact />
+     
+      <About />
+      <Contact/>
     </div>
   );
 }

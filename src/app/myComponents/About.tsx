@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="">
       <Intro />
-      <p className="text-center lg:text-start lg:text-2xl font-mono">
+      <p className="text-center lg:text-start lg:text-2xl font-mono text-white">
         Hi, Welcome to my little corner of the internet, I'm a software
         developer that enjoys coding since highschool and is currently studying
         software engineering at Cetys Universidad, I like to develop projects on

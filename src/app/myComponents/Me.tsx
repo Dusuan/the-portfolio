@@ -23,14 +23,14 @@ type MeProps = {
 
 export default function Me({ isOpen, setIsOpen }: MeProps) {
   return (
-    <div className="ease-in mt-10 h-full w-full font-mono flex justify-center items-center">
+    <div className="ease-in my-10 h-full w-full font-mono flex justify-center items-center">
       <Card className="flex h-full w-full bg-neutral-900 border border-neutral-700">
         <CardContent className="p-6 flex lg:flex-col justify-between">
           <div className="flex justify-center items-center relative w-52">
             <Image
               className="rounded-lg"
-              height={300}
-              width={400}
+              height={200}
+              width={200}
               alt="My photo"
               src="/dusuanpelon.jpg"
             />
@@ -41,7 +41,7 @@ export default function Me({ isOpen, setIsOpen }: MeProps) {
           />
           <Separator
             orientation="vertical"
-            className="relative mx-8 lg:mx-0 lg:hidden bg-neutral-800"
+            className="relative mx-4 lg:mx-0 lg:hidden bg-neutral-800"
           />
 
           <div className="text-neutral-50 flex  items-center  flex-col">
@@ -77,7 +77,7 @@ export default function Me({ isOpen, setIsOpen }: MeProps) {
               </Button>
               <Button
                 size={"sm"}
-                onClick={() => setIsOpen((prev) => !prev)}
+                onClick={() => setIsOpen(!isOpen)}
                 className="mt-4 w-full active:border active:border-neutral-200"
               >
                 Resume

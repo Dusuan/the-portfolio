@@ -5,7 +5,6 @@ export default function ContactLayout({
   }) {
   return(
     <div>
-      <h1>Contacto</h1>
       {children}
     </div>
   )}

@@ -16,9 +16,13 @@ import {
 import { Input } from "@/components/ui/input";
 
 const formSchema = z.object({
-  name: z.string().nonempty(),
+  name: z.string().nonempty({
+    message:"Please write your name"
+  }),
   email: z.string().email().nonempty(),
-  message: z.string().nonempty(),
+  message: z.string().nonempty({
+    message: "Please write a message"
+  }),
 });
 
 export default function () {
@@ -36,7 +40,7 @@ export default function () {
   }
 
   return (
-    <div id="contact">
+    <div id="contact" className="mb-64">
       <div className="mt-10 text-center lg:text-start">
         <p className="m-0 text-5xl md:text-6xl xl:text-7xl font-extrabold">SEND ME A </p>
         <p className="m-0 text-5xl md:text-6xl xl:text-7xl font-extrabold mb-6 text-neutral-600">
@@ -50,7 +54,7 @@ export default function () {
             className="flex flex-col font-mono border bg-neutral-900 border-neutral-900 rounded-lg"
             onSubmit={form.handleSubmit(onSubmit)}
           >
-            <div className="flex w-full gap-4
+            <div className="flex w-full gap-4 mb-8
             ">
             <FormField
               control={form.control}
@@ -96,7 +100,7 @@ export default function () {
                 </FormItem>
               )}
             />
-            <Button type="submit">Submit</Button>
+            <Button className="hover:bg-neutral-700" type="submit">Submit</Button>
           </form>
         </Form>
       </div>

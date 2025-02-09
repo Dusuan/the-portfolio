@@ -42,12 +42,12 @@ export default function ProjectCarousel() {
           PROJECTS
         </p>{" "}
       </div>
-      <div className="flex lg:hidden justify-center my-10">
-        <Carousel className="max-w-64">
+      <div className="min-h-96 flex lg:hidden justify-center my-10">
+        <Carousel className="max-w-64 min-h-96">
           <CarouselContent className="min-h-96">
             {projects.map((project, index) => (
-              <CarouselItem key={index} className="h-full w-32">
-                <Card className="bg-neutral-900 border border-neutral-700">
+              <CarouselItem key={index} className="min-h-96 w-32">
+                <Card className="flex flex-col items-center bg-neutral-900 border h-full border-neutral-700">
                   <CardHeader className="text-white">
                     <CardTitle>{project.title}</CardTitle>
                     <CardDescription className="text-inherit">
@@ -59,6 +59,8 @@ export default function ProjectCarousel() {
                       className="rounded-lg"
                       src={project.image}
                       alt="project"
+                      width={200}
+                      height={400}
                     />
                   </CardContent>
                 </Card>
