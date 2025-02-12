@@ -1,5 +1,11 @@
 import {NextApiRequest, NextApiResponse} from 'next';
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  res.status(200).json({ name: 'John Doe' })
+type messageData = {
+  message: string,
+  email: string,
+  name: string,
+}
+
+export default function handler(req: NextApiRequest, res: NextApiResponse<messageData>) {
+  
 }
