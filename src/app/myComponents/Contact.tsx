@@ -1,4 +1,3 @@
-
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
@@ -15,6 +14,9 @@ import {
 } from "@/components/ui/form";
 import prisma from "@/lib/prisma";
 import { Input } from "@/components/ui/input";
+import { useState } from "react";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+
 
 const formSchema = z.object({
   name: z.string().nonempty({
@@ -36,7 +38,7 @@ async function PostMessage(data: z.infer<typeof formSchema>) {
   });
 }
 
-export default function Contact () {
+export default function Contact() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -46,11 +48,38 @@ export default function Contact () {
     },
   });
 
-  
+  const [done, setDone] = useState(true);
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     PostMessage(values);
     form.reset();
+    setDone(true);
+  }
+
+  if (done) {
+    return (
+      <div className="mb-64 ">
+        <div id="contact" className="">
+          <div className="mt-10 text-center lg:text-start">
+            <p className="m-0 text-5xl md:text-6xl xl:text-7xl font-extrabold">
+              SEND ME A{" "}
+            </p>
+            <p className="m-0 text-5xl md:text-6xl xl:text-7xl font-extrabold mb-6 text-neutral-600">
+              MESSAGE
+            </p>{" "}
+          </div>
+        </div>
+        <div className="text-center font-mono">
+          <Alert className="bg-neutral-900 border-neutral-600 text-neutral-100">
+            <AlertTitle className="mb-4 font-bold">Message Sent</AlertTitle>
+            <AlertDescription>
+              Thank you for your message. I will get back to you as soon as
+              possible.
+            </AlertDescription>
+          </Alert>
+        </div>  
+      </div>
+    );
   }
 
   return (
