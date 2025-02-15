@@ -150,6 +150,8 @@ export default function () {
           </Marquee>
         </div>
       </div>
+      <Separator orientation="horizontal" className="my-10 bg-zinc-800" />
+
     </div>
   );
 }

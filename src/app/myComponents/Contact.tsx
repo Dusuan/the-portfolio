@@ -48,7 +48,7 @@ export default function Contact() {
     },
   });
 
-  const [done, setDone] = useState(true);
+  const [done, setDone] = useState(false);
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     PostMessage(values);

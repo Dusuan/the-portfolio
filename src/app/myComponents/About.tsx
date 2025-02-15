@@ -11,7 +11,7 @@ export default function About() {
         my free time and learn new technologies every single day as well as to
         create cool stuff!
       </p>
-      <Separator orientation="horizontal" className="my-10 bg-zinc-700" />
+      <Separator orientation="horizontal" className="my-10 bg-zinc-800" />
     </div>
   );
 }

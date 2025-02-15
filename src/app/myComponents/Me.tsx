@@ -32,7 +32,7 @@ export default function Me({ isOpen, setIsOpen }: MeProps) {
               height={200}
               width={200}
               alt="My photo"
-              src="/dusuanpelon.jpg"
+              src="/2.jpg"
             />
           </div>
           <Separator
