@@ -49,7 +49,7 @@ export default function ProjectCarousel() {
       </div>
       <div className="min-h-96 flex lg:hidden justify-center my-10">
         <Carousel className="max-w-64 min-h-96">
-          <CarouselContent className="min-h-96">
+          <CarouselContent className="min-h-96 items-center">
             {projects.map((project, index) => (
               <CarouselItem key={index} className="min-h-96 w-32">
                 <Card className="flex flex-col items-center bg-neutral-900 border h-full border-neutral-700">
@@ -59,7 +59,7 @@ export default function ProjectCarousel() {
                       {project.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="">
+                  <CardContent className="items-center" >
                     <img
                       className="rounded-lg"
                       src={project.image}

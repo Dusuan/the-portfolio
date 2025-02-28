@@ -15,6 +15,7 @@ import Image from "next/image";
 import Icon from "./Icon";
 import { Separator } from "@/components/ui/separator";
 import { useState } from "react";
+import Name from "../myComponents/Name"
 
 type MeProps = {
   isOpen: boolean;
@@ -25,8 +26,8 @@ export default function Me({ isOpen, setIsOpen }: MeProps) {
   return (
     <div className="ease-in my-10 h-full w-full font-mono flex justify-center items-center">
       <Card className="flex h-full w-full bg-neutral-900 border border-neutral-700">
-        <CardContent className="p-6 flex lg:flex-col justify-between">
-          <div className="flex justify-center items-center relative w-52">
+        <CardContent className="p-6 w-full flex lg:flex-col justify-between">
+          <div className="flex w-full justify-center items-center relative min-w-52">
             <Image
               className="rounded-lg"
               height={200}
@@ -44,9 +45,9 @@ export default function Me({ isOpen, setIsOpen }: MeProps) {
             className="relative mx-4 lg:mx-0 lg:hidden bg-neutral-800"
           />
 
-          <div className="text-neutral-50 flex  items-center  flex-col">
+          <div className="text-neutral-50 flex w-full  items-center  flex-col">
             <div >
-              <CardTitle >Juan Sandoval</CardTitle>
+              <CardTitle className="flex flex-col items-center"><Name/>Sandoval</CardTitle>
             </div>
             <div className="flex flex-col items-center w-full">
               <Button asChild size={"sm"} className="mt-4 w-full" variant={"default"}>
@@ -80,7 +81,14 @@ export default function Me({ isOpen, setIsOpen }: MeProps) {
                 onClick={() => setIsOpen(!isOpen)}
                 className="mt-4 w-full active:border active:border-neutral-200"
               >
-                Resume
+                <Image
+                    width={20}
+                    height={20}
+                    className="invert"
+                    priority
+                    src={"/resumess.svg"}
+                    alt={"Resume"}
+                  />{" "}
               </Button>
             </div>
           </div>
