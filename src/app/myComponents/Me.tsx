@@ -86,7 +86,7 @@ export default function Me({ isOpen, setIsOpen }: MeProps) {
                     height={20}
                     className="invert"
                     priority
-                    src={"/resumess.svg"}
+                    src={"/cv.svg"}
                     alt={"Resume"}
                   />{" "}
               </Button>
