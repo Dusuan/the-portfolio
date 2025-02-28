@@ -43,13 +43,13 @@ function LayoutContent({ children }: LayoutProps) {
         className={`${geistSans.variable} ${geistMono.variable} h-full antialiased bg-neutral-900`}
       >
         <AppRouterCacheProvider>
-          <div className="min-h-svh md:mx-16 xl:mx-60 2xl:mx-72 bg-neutral-900 px-10">
+          <div className="min-h-svh md:mx-16 xl:mx-60 2xl:mx-72 bg-neutral-900 px-4">
             <PrincipalHeader Buttons={Buttons} />
             <div className="flex lg:hidden">
               <Me isOpen={isOpen} setIsOpen={setIsOpen} />
             </div>
-            <div className="flex h-full justify-center items-start">
-              <div className="hidden lg:flex sticky top-20 mx-10 2xl:mx-20 justify-center text-white">
+            <div className="flex h-full w-full justify-between items-start">
+              <div className="hidden lg:flex sticky top-32 mx-10 2xl:mx-20 justify-center text-white">
                 <Me isOpen={isOpen} setIsOpen={setIsOpen} />
               </div>
               {children}

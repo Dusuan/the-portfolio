@@ -15,6 +15,7 @@ const formSchema = z.object({
 export async function POST(req: Request) {
   try {
     const body = await req.json();
+    console.log(body)
     const data = formSchema.parse(body);
     const message = await prisma.contact.create({
       data: {
@@ -26,7 +27,7 @@ export async function POST(req: Request) {
     return NextResponse.json(message);
   } catch (error) {
     return NextResponse.json(
-      { error: "Something went wrong" },
+      { error: "bruh" },
       { status: 500 }
     );
   }

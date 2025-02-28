@@ -13,14 +13,14 @@ export default function Projectos() {
   const { isOpen, setIsOpen } = appContext;
 
   return (
-    <div className="flex justify-center  text-white">
+    <div className="flex justify-center w-full mt-10  text-white">
 
       <div className="flex h-full flex-col lg:hidden">
         <ProjectCarousel />
         <Contact />
       </div>
 
-      <div className="hidden lg:flex flex-col">
+      <div className="hidden lg:flex w-full flex-col">
         <ProjectCarousel />
         <Contact />
       </div>

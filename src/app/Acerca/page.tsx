@@ -12,8 +12,7 @@ export default function Acerca() {
   const { isOpen, setIsOpen } = appContext;
 
   return (
-    <div className="text-white">
-     
+    <div className="w-full text-white">
       <About />
       <Contact/>
     </div>
