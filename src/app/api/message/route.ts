@@ -15,7 +15,6 @@ const formSchema = z.object({
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    console.log(body)
     const data = formSchema.parse(body);
     const message = await prisma.contact.create({
       data: {
