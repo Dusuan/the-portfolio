@@ -2,19 +2,13 @@
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
-import HeaderButton from "./HeaderButton";
 import Image from "next/image";
-import Icon from "./Icon";
 import { Separator } from "@/components/ui/separator";
-import { useState } from "react";
 import Name from "../myComponents/Name"
 
 type MeProps = {

@@ -1,17 +1,11 @@
 "use client";
 import {useAppContext} from "@/app/AppContext";
 
-import Image from "next/image";
-import Me from "@/app/myComponents/Me";
-import Intro from "@/app/myComponents/Intro";
 import About from "@/app/myComponents/About";
-import { Separator } from "@/components/ui/separator";
 import ProjectCarousel from "./myComponents/ProjectCarousel";
 import Technologies from "./myComponents/Technologies";
 import Contact from "./myComponents/Contact";
-import { useState } from "react";
 import PdfModal from "./myComponents/pdfModal";
-import { error } from "console";
 
 export default function Home() {
 

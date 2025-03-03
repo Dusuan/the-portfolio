@@ -9,11 +9,11 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import ProjectTiles from "./ProjectTiles";
+import Image from "next/image";
 
 const projects = [
   {
@@ -60,7 +60,7 @@ export default function ProjectCarousel() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="items-center" >
-                    <img
+                    <Image
                       className="rounded-lg"
                       src={project.image}
                       alt="project"

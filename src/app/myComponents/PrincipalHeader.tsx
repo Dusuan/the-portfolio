@@ -1,6 +1,5 @@
 import HeaderButton from "./HeaderButton";
-import { Button } from "../../components/ui/button";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronUp } from "lucide-react";
 import {
   Drawer,
   DrawerTrigger,
@@ -9,7 +8,7 @@ import {
   DrawerFooter,
   DrawerDescription,
   DrawerTitle,
-  DrawerClose,
+  
 } from "../../components/ui/drawer";
 import { Separator } from "@radix-ui/react-separator";
 

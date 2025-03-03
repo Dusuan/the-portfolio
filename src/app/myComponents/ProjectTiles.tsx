@@ -20,7 +20,7 @@ export default function ProjectTiles({
           <div className="flex justify-between text-white">
             <div className="flex items-center">
               <div>
-                <img
+                <Image
                   className="rounded-lg max-h-[125px] max-w-[125px] "
                   src={image}
                   width={125}

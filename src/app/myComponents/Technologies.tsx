@@ -1,8 +1,6 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
-import { LogOut } from "lucide-react";
-import { useEffect, useState, useRef } from "react";
 import React from "react";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
@@ -42,7 +40,7 @@ const technologies4 = [
   { text: "Supabase", logo: "/supabase.svg" },
   { text: "SpringBoot", logo: "/springboot.svg" },
 ];
-export default function () {
+export default function Technologies() {
   return (
     <div >
       <Separator orientation="horizontal" className="my-10 bg-neutral-700" />
