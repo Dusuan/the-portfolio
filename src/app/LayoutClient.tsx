@@ -45,7 +45,8 @@ function LayoutContent({ children }: LayoutProps) {
         <AppRouterCacheProvider>
           <div className="min-h-svh md:mx-16 xl:mx-60 2xl:mx-72 bg-neutral-900 px-4">
             <PrincipalHeader Buttons={Buttons} />
-            <div className="flex lg:hidden">
+            <div className="flex justify-center lg:hidden"> 
+              {/*might do something interesting in the background here*/}
               <Me isOpen={isOpen} setIsOpen={setIsOpen} />
             </div>
             <div className="flex h-full w-full justify-between items-start">

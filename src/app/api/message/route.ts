@@ -1,7 +1,7 @@
 import prisma from "@/lib/prisma";
 import z from "zod";
 import { NextResponse } from "next/server";
-
+  
 const formSchema = z.object({
   name: z.string().nonempty({
     message: "Please write your name",

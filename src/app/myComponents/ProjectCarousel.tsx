@@ -60,6 +60,7 @@ export default function ProjectCarousel() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="items-center" >
+                    <a href={project.link}>
                     <Image
                       className="rounded-lg"
                       src={project.image}
@@ -67,13 +68,14 @@ export default function ProjectCarousel() {
                       width={200}
                       height={400}
                     />
+                    </a>
                   </CardContent>
                 </Card>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="border-neutral-600 bg-neutral-800" />
-          <CarouselNext className="border-neutral-600 bg-neutral-800" />
+          <CarouselPrevious className="hidden sm:flex border-neutral-600 bg-neutral-800" />
+          <CarouselNext className="hidden sm:flex border-neutral-600 bg-neutral-800" />
         </Carousel>
       </div>
       <div className="hidden lg:flex lg:flex-col justify-center">

@@ -4,10 +4,12 @@ WORKDIR /app
 EXPOSE 3000
 COPY package*.json ./
 
-RUN npm install
 
 COPY . .
+COPY prisma ./prisma/
 
-RUN npm next build
+RUN npm install
+
+RUN npx next build
 
 CMD ["npx", "next", "start"]

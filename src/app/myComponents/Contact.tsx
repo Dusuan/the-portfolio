@@ -57,7 +57,7 @@ export default function Contact() {
 
   if (done) {
     return (
-      <div className="mb-64 ">
+      <div className="mb-64">
         <div id="contact" className="">
           <div className="mt-10 text-center lg:text-start">
             <p className="m-0 text-5xl md:text-6xl xl:text-7xl font-extrabold">

@@ -52,7 +52,7 @@ export default function Technologies() {
         </p>{" "}
       </div>
       <div className="font-mono flex flex-col justify-center items-center lg:items-start overflow-hidden">
-        <div className="relative w-96 lg:w-[470px] 2xl:w-[750px] 3xl:w-[1200px] border border-1 border-neutral-700 rounded-lg">
+        <div className="relative w-72 md:w-96 lg:w-[470px] 2xl:w-[750px] 3xl:w-[1200px] border border-1 border-neutral-700 rounded-lg">
           <Marquee
             className="my-2"
             autoFill={true}

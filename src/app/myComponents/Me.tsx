@@ -1,15 +1,11 @@
 "use client";
-import {
-  Card,
-  CardContent,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
-import Name from "../myComponents/Name"
+import Name from "../myComponents/Name";
 
 type MeProps = {
   isOpen: boolean;
@@ -18,9 +14,9 @@ type MeProps = {
 
 export default function Me({ isOpen, setIsOpen }: MeProps) {
   return (
-    <div className="ease-in my-10 h-full w-full font-mono flex justify-center items-center">
-      <Card className="flex h-full w-full bg-neutral-900 border border-neutral-700">
-        <CardContent className="p-6 w-full flex lg:flex-col justify-between">
+    <div className="my-10 h-full font-mono flex justify-center items-center">
+      <Card className="flex h-full bg-neutral-900 border border-neutral-700">
+        <CardContent className="flex-col  md:flex p-6 w-full flex lg:flex-col justify-between">
           <div className="flex w-full justify-center items-center relative min-w-52">
             <Image
               className="rounded-lg"
@@ -30,21 +26,22 @@ export default function Me({ isOpen, setIsOpen }: MeProps) {
               src="/2.jpg"
             />
           </div>
-          <Separator
-            orientation="horizontal"
-            className="hidden lg:block lg:my-4 bg-neutral-800"
-          />
-          <Separator
-            orientation="vertical"
-            className="relative mx-4 lg:mx-0 lg:hidden bg-neutral-800"
-          />
+          <Separator orientation="horizontal" className="my-5 bg-zinc-800" />
 
-          <div className="text-neutral-50 flex w-full  items-center  flex-col">
-            <div >
-              <CardTitle className="flex flex-col items-center"><Name/>Sandoval</CardTitle>
+          <div className="text-neutral-50 flex w-full items-center  flex-col">
+            <div>
+              <CardTitle className="flex flex-col items-center">
+                <Name />
+                Sandoval
+              </CardTitle>
             </div>
-            <div className="flex flex-col items-center w-full">
-              <Button asChild size={"sm"} className="mt-4 w-full" variant={"default"}>
+            <div className="flex flex-col items-center w-2/3">
+              <Button
+                asChild
+                size={"sm"}
+                className="mt-4 w-full"
+                variant={"default"}
+              >
                 <Link href={"https://github.com/Dusuan"}>
                   <Image
                     width={20}
@@ -76,13 +73,13 @@ export default function Me({ isOpen, setIsOpen }: MeProps) {
                 className="mt-4 w-full active:border active:border-neutral-200"
               >
                 <Image
-                    width={20}
-                    height={20}
-                    className="invert"
-                    priority
-                    src={"/cv.svg"}
-                    alt={"Resume"}
-                  />{" "}
+                  width={20}
+                  height={20}
+                  className="invert"
+                  priority
+                  src={"/cv.svg"}
+                  alt={"Resume"}
+                />{" "}
               </Button>
             </div>
           </div>

@@ -16,7 +16,7 @@ export default function Home() {
   const {isOpen, setIsOpen} = appContext;
 
   return (
-      <div className="flex h-full w-full items-start">
+      <div className="flex justify-center lg:items-start h-full w-full">
         <PdfModal isOpen={isOpen} setIsOpen={setIsOpen} />
       
         <div className="flex justify-center  text-white">
