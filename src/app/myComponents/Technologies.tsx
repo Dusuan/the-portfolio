@@ -23,7 +23,7 @@ const technologies2 = [
   { text: "Node.js", logo: "/nodedotjs.svg" },
   { text: "Next.js", logo: "/nextdotjs.svg" },
   { text: "Puppeteer", logo: "/puppeteer.svg" },
-  { text: "React", logo: "/react.svg" },
+  { text: "React", logo: "/react.svg" },  
 ];
 
 const technologies3 = [
@@ -61,7 +61,7 @@ export default function Technologies() {
           >
             {technologies1.map((technology, index) => (
               <div key={index}>
-                <Badge className="h-12 fit flex justify-center border border-neutral-700 items-center">
+                <Badge className="h-12   fit flex justify-center border border-neutral-700 items-center">
                   <Image
                     width={20}
                     height={20}
