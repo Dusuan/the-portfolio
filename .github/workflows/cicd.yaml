@@ -2,6 +2,7 @@ name: Github Actions CI/CD
 run-name: test 
 on:
   push:
+    branches: [main]
 
 jobs:
   docker:
@@ -22,3 +23,7 @@ jobs:
         with:
           push: true
           tags: dusuan/the-portfolio:latest
+        env:
+          deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        run: | 
+          curl "$deploy_url"
